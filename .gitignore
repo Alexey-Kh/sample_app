@@ -17,3 +17,7 @@
 
 # Ignore spring files.
 /spring/*.pid
+
+# Ignore .sublime project files
+sample_app.sublime-project
+sample_app.sublime-workspace
