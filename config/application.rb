@@ -22,5 +22,16 @@ module SampleApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Use memory store for assets cache in development/test to avoid caching
+    # to tmp/assets, because it causes hiding of deprecation messages in
+    # stylesheets, sometimes break parallel_tests and doesn't always refresh
+    # gem stylesheets in development
+    config.assets.configure do |env|
+      if Rails.env.development?
+        env.cache = ActiveSupport::Cache.lookup_store(:memory_store)
+      end
+    end
   end
 end
+
