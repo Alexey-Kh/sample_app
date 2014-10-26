@@ -11,6 +11,12 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                password_confirmation: "bar" }
     end
     assert_template 'users/new'
+    assert_select 'div.alert.alert-danger', "The form contains 4 errors."
+    assert_select 'div#error_explanation' do
+      assert_select 'ul' do
+        assert_select "li", 4
+      end
+    end    
   end
 
   test "valid signup information" do
@@ -22,6 +28,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                     password_confirmation: "foobar" }
     end
     assert_template 'users/show'
+    assert_not flash.empty?
   end
 
 end
