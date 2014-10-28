@@ -21,7 +21,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     end
 
     test "layout links as logged-in user" do
-      log_in_as(@non_admin)
+      #log_in_as(@non_admin)
       get root_path
       assert_template 'static_pages/home'
       assert_select "a[href=?]", root_path, count: 2
