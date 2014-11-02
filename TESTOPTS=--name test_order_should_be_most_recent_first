@@ -1,0 +1,17 @@
+Started
+
+
+
+Progress: |[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[0m[1000D[K[31m FAIL[0m["test_order_should_be_most_recent_first", MicropostTest, 0.730644337]
+ test_order_should_be_most_recent_first#MicropostTest (0.73s)
+        --- expected
+        +++ actual
+        @@ -1 +1 @@
+        -#<Micropost id: 12348100, content: "Sad cats are sad: http://youtu.be/PKffm2uI4dk", user_id: nil, created_at: "2014-11-01 18:00:23", updated_at: "2014-11-01 20:00:23">
+        +#<Micropost id: 941832919, content: "Writing a short test", user_id: nil, created_at: "2014-11-01 20:00:23", updated_at: "2014-11-01 20:00:23">
+        test/models/micropost_test.rb:20:in `block in <class:MicropostTest>'
+
+[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m[31m=[0m|
+
+Finished in 0.73267s
+3 tests, 3 assertions, [31m1 failures, 0 errors, [0m[33m0 skips[0m
