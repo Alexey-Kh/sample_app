@@ -21,3 +21,6 @@
 # Ignore .sublime project files
 sample_app.sublime-project
 sample_app.sublime-workspace
+
+# Ignore uploaded test images.
+/public/uploads
